@@ -18,6 +18,7 @@ import { AncientParticles3D } from "@/components/canvas/AncientParticles3D";
 import { AchievementsModal } from "@/components/achievements/AchievementsModal";
 import { SessionNotePrompt } from "@/components/journal/SessionNotePrompt";
 import { PomodoroCoach } from "@/components/coach/PomodoroCoach";
+import { DevelopmentBanner } from "@/components/banner/DevelopmentBanner";
 import { ThreeDTreeCanvasHandle } from "@/components/garden/ThreeDTreeCanvas";
 import { LandingSections } from "@/components/landing/LandingSections";
 import { awardXP, XP_REWARDS, getRankForXP, getStoredXP } from "@/lib/xp";
@@ -182,6 +183,9 @@ export default function PomodoroPage() {
 
   return (
     <main className="relative min-h-screen">
+      {/* Development Banner */}
+      <DevelopmentBanner />
+
       {/* 1. Stage (Fullscreen App) */}
       <div className="stage">
         {/* Background Layers */}
